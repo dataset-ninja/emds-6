@@ -13,53 +13,91 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "Environmental Microorganism Image Dataset"
+PROJECT_NAME_FULL: str = "Environmental Microorganism Image Dataset Sixth Version"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_4_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
+CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2021-12-04"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://figshare.com/articles/dataset/EMDS-6/17125025/1"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 14130524
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/emds-6"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
+    "https://figshare.com/ndownloader/files/31660352"
+)
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "actinophrys": [230, 25, 75],
+    "arcella": [60, 180, 75],
+    "aspidisca": [255, 225, 25],
+    "codosiga": [0, 130, 200],
+    "colpoda": [245, 130, 48],
+    "epistylis": [145, 30, 180],
+    "euglypha": [70, 240, 240],
+    "paramecium": [240, 50, 230],
+    "rotifera": [210, 245, 60],
+    "vorticella": [250, 190, 212],
+    "noctiluca": [0, 128, 128],
+    "ceratium": [220, 190, 255],
+    "stentor": [170, 110, 40],
+    "siprostomum": [255, 250, 200],
+    "keratella quadrala": [128, 0, 0],
+    "euglena": [170, 255, 195],
+    "gymnodinium": [128, 128, 0],
+    "gonyaulax": [255, 215, 180],
+    "phacus": [0, 0, 128],
+    "stylongchia": [70, 110, 240],
+    "synchaeta": [200, 130, 0],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://arxiv.org/pdf/2112.07111"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"some_link_to_repo_if_exists"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
-AUTHORS_CONTACTS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "Chen Li",
+    "Xuemin Zhu",
+    "Bolin Lu",
+    "Jinghua Zhang",
+    "Fangshu Ma",
+    "Yanling Zou",
+    "Peng Zhao",
+    "Pingli Ma",
+    "Hao Xu",
+]
+AUTHORS_CONTACTS: Optional[List[str]] = [
+    "lichen@bmie.neu.edu.cn",
+    "lichen201096@hotmail.com",
+    "jiang@cuit.edu.cn",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CN-DE-AU joint research group"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
