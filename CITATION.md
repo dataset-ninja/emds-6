@@ -1,11 +1,13 @@
 If you make use of the Environmental Microorganism Image Dataset data, please cite the following reference:
 
 ``` bibtex 
-@dataset{Environmental Microorganism Image Dataset,
-  author={Chen Li and Xuemin Zhu and Bolin Lu and Jinghua Zhang and Fangshu Ma and Yanling Zou and Peng Zhao and Pingli Ma and Hao Xu},
-  title={Environmental Microorganism Image Dataset Sixth Version},
-  year={2021},
-  url={https://figshare.com/articles/dataset/EMDS-6/17125025/1}
+@article{Group2021,
+  author = "MIaMIA Group",
+  title = "{EMDS-6}",
+  year = "2021",
+  month = "12",
+  url = "https://figshare.com/articles/dataset/EMDS-6/17125025",
+  doi = "10.6084/m9.figshare.17125025.v1"
 }
 ```
 
