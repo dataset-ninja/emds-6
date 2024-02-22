@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "Environmental Microorganism Image Dataset"
-PROJECT_NAME_FULL: str = "Environmental Microorganism Image Dataset Sixth Version"
+PROJECT_NAME_FULL: str = "EMDS-6: Environmental Microorganism Image Dataset Sixth Version"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
