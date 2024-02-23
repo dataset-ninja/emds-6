@@ -21,8 +21,8 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
-CATEGORY: Category = Category.Medical()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Biomedical()]
+CATEGORY: Category = Category.Medical(extra=Category.Biology())
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
@@ -97,7 +97,7 @@ AUTHORS_CONTACTS: Optional[List[str]] = [
     "jiang@cuit.edu.cn",
 ]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CN-DE-AU joint research group"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CN-GER-AU joint research group"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
