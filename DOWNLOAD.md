@@ -1,6 +1,6 @@
 Dataset **Environmental Microorganism Image Dataset** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/d/D/CE/MOpFP1t7EQktnkiRaV7REGWdWJl5bsZk6tWvFyKArHylM4KCGmjHeHSUzMcxM4Xy6cjSWwSs4aw0dXbcBHnQBFvwzdNb0EPBJU2IZ1f0kcVDFU9XqktgWJbgyffU.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
