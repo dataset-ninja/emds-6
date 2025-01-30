@@ -1,6 +1,6 @@
 Dataset **EMDS-6** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/ih0qnti4t0n5gospww3d7/environmental-microorganism-image-dataset-DatasetNinja.tar?rlkey=ep9hx41qggwczlj24e6wvvawv&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzM1NTFfRW52aXJvbm1lbnRhbCBNaWNyb29yZ2FuaXNtIEltYWdlIERhdGFzZXQvZW52aXJvbm1lbnRhbC1taWNyb29yZ2FuaXNtLWltYWdlLWRhdGFzZXQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiWDl0VmNZOHJmU0c4ZTlrVllYYVZqYXRPcWFTUk81TXBCbHJ2N2tuUWp3az0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
